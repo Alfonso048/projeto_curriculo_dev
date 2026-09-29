@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc 55%, #e0e7ff);
+  color: #172033;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+/* Login card works with common semantic and class-based HTML structures. */
+main,.login,.login-container,.login-card,.container {
+  width: min(100%, 420px);
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 24px 70px rgba(31, 41, 80, 0.14);
+}
+
+h1,h2 {
+  margin: 0 0 10px;
+  color: #172554;
+  font-size: 1.8rem;
+  letter-spacing: -0.04em;
+}
+
+p {
+  margin: 0 0 24px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #334155;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dbe2ee;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input:focus,select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.14);
+}
+
+button,input[type="submit"] {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 24px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+button:hover,input[type="submit"]:hover {
+  transform: translateY(-1px);
+  background: #4338ca;
+}
+
+a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  main,.login,.login-container,.login-card,.container {
+    padding: 30px 24px;
+  }
+}
